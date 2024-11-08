@@ -6,7 +6,7 @@
 </p>
 
 ## Overview
-This project is responsible for processing and ingesting logs from various sources into OpenSearch. The "Tracker Producer" receives logs from an external application, batches them, and publishes messages to a queue for asynchronous processing. These messages are then consumed by the "Tracker Consumer," which reads, processes, and stores them in a database. Additionally, the "Tracker Webhook" monitors for offline agents, triggering alerts and updating OpenSearch with this information. The system is designed to ensure all logs and agent statuses are efficiently ingested and monitored within the platform.
+This project is responsible for processing and ingesting logs from various sources into OpenSearch. The "Tracker Producer" receives logs from an external application, batches them, and publishes messages to a queue for asynchronous processing. These messages are then consumed and processed by the "Tracker Consumer," which also functions as the "Tracker Webhook." This combined application reads the messages, processes them, stores the data in a database, and monitors for offline agents, triggering alerts and updating OpenSearch with this information. The system is designed to ensure all logs and agent statuses are efficiently ingested and monitored within the platform.
 
 ## Diagrams
 **End-to-End Log Ingestion & Agent Alert Pipeline**
