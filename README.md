@@ -18,7 +18,7 @@
 
 **Install the dependencies:**
 ```bash
-go mod download
+go mod tidy
 ```
 **Run the Producer:**
 
