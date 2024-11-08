@@ -45,22 +45,22 @@ curl http://localhost:8080/swagger/index.html
 
 | Variable                   | Description                                                                                   |
 |----------------------------|-----------------------------------------------------------------------------------------------|
-| `WEBSITE_INSTANCE_ID`      | Unique identifier for the website instance. Leave blank if not applicable.                    |
-| `FUNCTIONS_WORKER_RUNTIME` | Sets the runtime environment for functions (e.g., "Custom" for custom handlers).              |
-| `FUNCTIONS_CUSTOMHANDLER_PORT` | Port used by the custom handler, usually for Azure Function apps.                      |
-| `IS_TESTING`               | Indicates if the app is in testing mode (`true` or `false`).                                  |
+| `WEBSITE_INSTANCE_ID`      | Unique identifier for the website instance (leave blank if not applicable).                   |
+| `FUNCTIONS_WORKER_RUNTIME` | Specifies the runtime environment for functions (set to "Custom" for custom handlers).              |
+| `FUNCTIONS_CUSTOMHANDLER_PORT` | The port used by the custom handler.                     |
+| `IS_TESTING`               | Specifies if the app is in testing mode (`true` or `false`).                                   |
 | `DB_HOST`                  | Database server hostname (e.g., `localhost` for local development).                           |
 | `DB_PORT`                  | Port on which the database server is running (e.g., `5432` for PostgreSQL).                   |
 | `DB_NAME`                  | Name of the database to connect to (e.g., `tracker`).                                         |
 | `DB_USER`                  | Username for accessing the database (e.g., `postgres`).                                       |
 | `DB_PASSWORD`              | Password for the database user.                                                               |
 | `DB_SSL`                   | SSL mode for the database connection (e.g., `disable` for local development).                 |
-| `ENVIRONMENT`              | Specifies the app environment (e.g., `local`, `production`).                                  |
-| `SITE_NAME`                | Hostname and port for the site (e.g., `localhost:8080`).                                      |
+| `ENVIRONMENT`              | Defines the environment the app is running in (e.g., `local`, `production`).                                  |
+| `SITE_NAME`                | The hostname and port of the site (e.g., `localhost:8080`).                                       |
 | `CATALOG_ENDPOINT`         | URL for the catalog service endpoint (e.g., `http://localhost:8080`).                         |
 | `OPENSEARCH_ADDRESS`       | URL for the OpenSearch server (e.g., `http://localhost:9200`).                                |
-| `KAFKA_ENDPOINT`           | Address and port for Kafka (e.g., `localhost:9092`).                                          |
-| `KAFKA_TOPIC`              | Kafka topic name for message ingestion (e.g., `tracker-ingestor`).                            |
+| `KAFKA_ENDPOINT`           | The endpoint for connecting to Kafka (e.g., `localhost:9092`).                                          |
+| `KAFKA_TOPIC`              | The Kafka topic that the application uses for message ingestion (e.g., `tracker-ingestor`).                            |
 | `KAFKA_CONSUMER_GROUP`     | Kafka consumer group identifier (e.g., `tracker-consumer-group`).                             |
 | `ISSUER_URL`               | URL for the issuer in identity management (e.g., `http://test.com`).                          |
 | `DISCOVERY_BASE_URL`       | Base URL for discovery services (e.g., `http://test.com`).                                    |
