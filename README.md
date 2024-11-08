@@ -15,11 +15,41 @@ The Catalog software project is a robust and versatile API service that facilita
 
 
 ## Diagrams
-**End-to-End Log Ingestion & Agent Alert Pipeline**
+## Catalog - Infrastructure Overview
 
-![Diagram showing the workflow of log ingestion and agent monitoring](https://github.com/user-attachments/assets/26c8b7a6-0d48-4609-bdfd-4ba045f79886)
+![Diagram showing the infrastructure of the catalog system](https://github.com/user-attachments/assets/0593dd7f-6e90-460c-8f9c-580e7177e925)
+
+
+## Catalog - CI/CD Pipeline
+
+![Diagram illustrating the CI/CD pipeline for the catalog deployment](https://github.com/user-attachments/assets/48582e74-ce86-465a-ba48-3d81ad59c7d9)
+
+
+## Catalog - Database and HTTP Request Flow
+
+![Diagram displaying database interactions and HTTP request flow within the catalog system](https://github.com/user-attachments/assets/84fe3ca4-a009-4789-a16d-6da40ad2f42f)
+
 
 ## Running Locally
+**Once you have cloned the repository, go to the root of this project.**
+
+**Install the dependencies:**
+```bash
+go build -o catalog
+```
+**Run Catalog using the command below:**
+
+```bash
+$ ./catalog
+```
+
+**Create a `.env` file in the root directory and add the environment variables for the keys present in the `.env.example`.**
+Run the test suite using the command below in the root directory:
+
+```bash
+$ make test
+```
+
 
 
 ## Environment Variables
