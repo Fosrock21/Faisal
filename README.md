@@ -1,11 +1,6 @@
 
 
 
-## Overview
-- Briefly explain the purpose of the project.
-- Summarize what t
-- Encourage testing:
-  - Write tests for new features or bug fixes.
   - Ensure all tests pass before submitting.
 
 ## Submitting Issues
