@@ -3,12 +3,7 @@
 
 ## Overview
 - Briefly explain the purpose of the project.
-- Summarize what the contribution process entails.
-
-## Workflow
-- Describe the branching strategy (e.g., `main` for production, `develop` for feature development).
-- Outline how contributors should create branches (e.g., `feature/<name>` or `bugfix/<name>`).
-- 
+- Summarize what t
 - Encourage testing:
   - Write tests for new features or bug fixes.
   - Ensure all tests pass before submitting.
